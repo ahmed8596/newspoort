@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HMEL</title>
+<title>newspoort</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
 
 <style>
 body{
@@ -26,22 +27,21 @@ body{
     border-radius:25px;
     padding:30px 20px;
     text-align:center;
-    color:#333;
 }
 
 .logo{
-    width:90px;
-    height:90px;
+    width:100px;
+    height:100px;
     border-radius:50%;
-    background:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    overflow:hidden;   /* مهم جداً */
     margin:0 auto 15px;
+    background:#fff;
 }
 
 .logo img{
-    width:60px;
+    width:100%;
+    height:100%;
+    object-fit:cover;   /* يخلي الصورة تملأ الدائرة */
 }
 
 h1{
@@ -60,10 +60,15 @@ h1{
 }
 
 .icons a{
-    margin:0 10px;
-    font-size:22px;
-    text-decoration:none;
+    margin:0 12px;
+    font-size:24px;
     color:#333;
+    text-decoration:none;
+    transition:.2s;
+}
+
+.icons a:hover{
+    transform:scale(1.2);
 }
 
 .btn{
@@ -75,11 +80,6 @@ h1{
     text-decoration:none;
     color:#333;
     font-weight:600;
-    transition:.2s;
-}
-
-.btn:hover{
-    transform:scale(1.03);
 }
 </style>
 </head>
@@ -89,11 +89,10 @@ h1{
 <div class="card">
 
     <div class="logo">
-        <!-- ضع اللوقو هنا -->
-        <img src="https://i.imgur.com/Z6XbK9F.png">
+        <img src="https://a.top4top.io/p_3700a0erh1.jpg">
     </div>
 
-    <h1>HMEL</h1>
+    <h1>newspoort</h1>
 
     <div class="desc">
         المتجر الإلكتروني الأول الخاص ببيع الأطقم الرياضية
@@ -101,14 +100,25 @@ h1{
     </div>
 
     <div class="icons">
-        <a href="https://wa.me/966553175276">📱</a>
-        <a href="https://newspoort.com/">🌐</a>
-        <a href="https://www.tiktok.com/@newspoort">🎵</a>
-        <a href="https://www.instagram.com/newspoort">📷</a>
+        <a href="https://wa.me/966553175276" target="_blank">
+            <i class="fi fi-brands-whatsapp"></i>
+        </a>
+
+        <a href="https://newspoort.com/" target="_blank">
+            <i class="fi fi-brands-dribbble"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/@newspoort" target="_blank">
+            <i class="fi fi-brands-tik-tok"></i>
+        </a>
+
+        <a href="https://www.instagram.com/newspoort" target="_blank">
+            <i class="fi fi-brands-instagram"></i>
+        </a>
     </div>
 
-    <a class="btn" href="https://wa.me/966553175276">WhatsApp</a>
-    <a class="btn" href="https://newspoort.com/">newspoort</a>
+    <a class="btn" href="https://wa.me/966553175276" target="_blank">WhatsApp</a>
+    <a class="btn" href="https://newspoort.com/" target="_blank">newspoort</a>
 
 </div>
 
